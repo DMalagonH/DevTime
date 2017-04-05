@@ -5,13 +5,26 @@
 </ion-header>
 
 <ion-content padding>
-  <h2>Welcome to Ionic!</h2>
-  <p>
-    This starter project comes with simple tabs-based layout for apps
-    that are going to primarily use a Tabbed UI.
-  </p>
-  <p>
-    Take a look at the <code>src/pages/</code> directory to add or change tabs,
-    update any existing page or create new pages.
-  </p>
+	<h2>DevTime Calculator</h2>
+	<h6>Calculador de tiempo de desarrollo</h6>
+	<ion-list>
+		<ion-item>
+			<ion-label floating>Tiempo mínimo</ion-label>
+			<ion-input type="number" value=""></ion-input>
+		</ion-item>
+		<ion-item>
+			<ion-label floating>Tiempo máximo</ion-label>
+			<ion-input type="number"></ion-input>
+		</ion-item>
+		<ion-item>
+			<ion-label floating>Tiepom más probable</ion-label>
+			<ion-input type="number"></ion-input>
+		</ion-item>
+	</ion-list>
+	<div padding>
+  		<button ion-button icon-left block>
+  			<ion-icon name="calculator"></ion-icon>
+  			Calcular
+		</button>
+	</div>
 </ion-content>
