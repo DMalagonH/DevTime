@@ -2,16 +2,17 @@ import { Component } from '@angular/core';
 import { NavController, AlertController } from 'ionic-angular';
 
 @Component({
-	selector: 'page-optimist',
-	templateUrl: 'optimist.html'
+	selector: 'page-home',
+	templateUrl: 'home.html'
 })
-export class OptimistPage {
+
+export class HomePage {
 	times = {
 		min:	0,
 		max:	0,
 		pro:	0,
 		est:	0
-	};		
+	};
 
 	constructor(public navCtrl: NavController, public alertCtrl: AlertController) {}
 
@@ -29,7 +30,7 @@ export class OptimistPage {
 
 	calculatePessimist = ():void => {
 		var estimated:number = (+this.times.min + (3 * +this.times.max) + ( 2 * +this.times.pro)) / 6;
-		
+
 		let alert = this.alertCtrl.create({
 			title:		"Tiempo estimado pesimista",
 			subTitle:	estimated.toString(),
